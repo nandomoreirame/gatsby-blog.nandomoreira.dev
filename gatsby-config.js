@@ -10,24 +10,24 @@ module.exports = {
     },
     social: [
       {
-        name: `twitter`,
-        url: `https://twitter.com/narative`,
+        name: `github`,
+        url: `https://github.com/nandomoreirame`,
       },
       {
-        name: `github`,
-        url: `https://github.com/narative`,
+        name: `twitter`,
+        url: `https://twitter.com/oseunando`,
       },
       {
         name: `instagram`,
-        url: `https://instagram.com/narative.co`,
-      },
-      {
-        name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
+        url: `https://instagram.com/oseunando`,
       },
       {
         name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
+        url: `https://dribbble.com/umdevux`,
+      },
+      {
+        name: `linkedin`,
+        url: `https://www.linkedin.com/in/nandomoreirame/`,
       },
     ],
   },
@@ -39,6 +39,7 @@ module.exports = {
         contentAuthors: "content/authors",
         basePath: "/",
         authorsPage: true,
+        authorsPath: "author",
         sources: {
           local: true,
           // contentful: true,

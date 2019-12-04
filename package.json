@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "npm run clean && gatsby build",
     "dev": "gatsby develop -H 0.0.0.0 -p 8000",
+    "deploy": "npm run build && netlify deploy --dir=public",
+    "release": "npm run deploy --prod",
     "clean": "gatsby clean"
   },
   "dependencies": {

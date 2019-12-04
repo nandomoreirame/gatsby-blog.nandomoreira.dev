@@ -1,8 +1,9 @@
 ---
 title: 'Criando a bandeira do Brasil 🇧🇷 apenas com CSS'
 excerpt: 'Hoje eu vou demonstrar nesse artigo como eu criei a bandeira do Brasil usando apenas com CSS'
-hero: ../../../images/bandeira-do-brasil-com-css.png
+hero: ./bandeira-do-brasil-com-css.png
 author: Fernando Moreira
+date: 2016-07-04
 ---
 
 Olá terráqueo, como vai?
@@ -164,7 +165,7 @@ Ainda utilizando a classe `.circle` vamos criar a faixa branca da bandeira.
 
 ## O resultado final
 
-[![Bandeira do Brasil 🇧🇷 apenas com CSS](https://codepen.io/oknoblich/pen/zrRRwx/image/large.png)](https://codepen.io/nandomoreirame/pen/zrRRwx)
+[![Bandeira do Brasil 🇧🇷 apenas com CSS](./criando-a-bandeira-do-brasil-apenas-com-css.png)](https://codepen.io/nandomoreirame/pen/zrRRwx)
 
 Ainda falta fazer as estrelas que, ao aceitar o meu [_pull request_](https://github.com/pattle/Flags-in-CSS/pull/5), o [Christopher Pattle](https://github.com/pattle) perguntou se não seria legal coloca-las, bem... Eu estou pensando ainda se coloco. :D
 

@@ -2,8 +2,8 @@
 title: 'Usando Browsersync em uma aplicação Ruby on Rails'
 excerpt: Hoje vou explicar como integrar e usar o Browsersync.io dentro de uma aplicação Ruby on Rails
 hero: ../../../images/painel-browsersync-io.png
-date: 2016-06-20
 author: Fernando Moreira
+date: 2016-06-20
 ---
 
 ![Usando Browsersync em uma aplicação Ruby on Rails](../../../images/painel-browsersync-io.png)

@@ -73,56 +73,56 @@ vue init nuxt-community/starter-template blog-with-vuejs \
 
 A estrutura padrão de um aplicativo **Nuxt.js** destina-se a fornecer um ótimo ponto de partida para pequenas e grandes aplicações. Claro, você é livre para organizar seu aplicativo, como quiser.
 
-<table class="table table-bordered table-striped">
-<tbody>
-<tr>
-<td><strong>Diretório <code class="highlighter-rouge">assets</code></strong></td>
-<td>Esse diretório contém seus recursos não compilados, como Less, SASS, Stylus ou JavaScript.</td>
-</tr>
-<tr>
-<td><strong>Diretório <code class="highlighter-rouge">component</code></strong></td>
-<td>Esse diretório contém seus componentes Vue. O Nuxt.js não carrega automaticamente esses componentes.</td>
-</tr>
-<tr>
-<td><strong>Diretório <code class="highlighter-rouge">layouts</code></strong></td>
-<td>Esse diretório contém os layouts da sua aplicação. <br><em>Este diretório não pode ser renomeado.</em></td>
-</tr>
-<tr>
-<td><strong>Diretório <code class="highlighter-rouge">middleware</code></strong></td>
-<td>Esse diretório contém o Middleware de sua aplicação. O Middleware permite que você defina funções personalizadas que podem ser executadas antes de
-renderizar uma página ou um grupo de páginas (layouts).</td>
-</tr>
-<tr>
-<td><strong>Diretório <code class="highlighter-rouge">pages</code></strong></td>
-<td>Esse diretório contém as views e rotas da sua aplicação. O framework lê todos os arquivos <code class="highlighter-rouge">.vue</code> dentro desse
-diretório e cria o router da aplicação. <br><em>Este diretório não pode ser renomeado.</em></td>
-</tr>
-<tr>
-<td><strong>Diretório <code class="highlighter-rouge">plugins</code></strong></td>
-<td>Esse diretório contém os plugins JavaScript que deseja executar antes de instanciar o aplicativo Vue.js da raiz.</td>
-</tr>
-<tr>
-<td><strong>Diretório <code class="highlighter-rouge">static</code></strong></td>
-<td>Esse diretório contém seus arquivos estáticos. Cada arquivo dentro deste diretório é mapeado para a raiz do seu site <code class="highlighter-rouge">/</code>.
-Exemplo: <code class="highlighter-rouge">/static/robots.txt</code> é mapeado como <code class="highlighter-rouge">http://seusite.com/robots.txt</code>
-<br><em>Este diretório não pode ser renomeado.</em></td>
-</tr>
-<tr>
-<td><strong>Diretório <code class="highlighter-rouge">store</code></strong></td>
-<td>Esse diretório contém seus arquivos do <strong>Vuex Store</strong>. A opção Vuex Store é implementada na estrutura do Nuxt.js. A criação de um
-arquivo <code class="highlighter-rouge">index.js</code> neste diretório habilita essa opção automaticamente. <br><em>Este diretório não pode ser
-renomeado.</em></td>
-</tr>
-<tr>
-<td><strong>Arquivo <code class="highlighter-rouge">nuxt.config.js</code></strong></td>
-<td>Esse arquivo contém a configuração personalizada do <strong>Nuxt.js</strong>. <br><em>Este arquivo não pode ser renomeado.</em></td>
-</tr>
-<tr>
-<td><strong>Arquivo <code class="highlighter-rouge">package.json</code></strong></td>
-<td>Esse arquivo contém suas dependências e scripts da sua aplicação. <br><em>Este arquivo não pode ser renomeado.</em></td>
-</tr>
-</tbody>
-</table>
+#### Diretório `assets`
+
+- Esse diretório contém seus recursos não compilados, como Less, SASS, Stylus ou JavaScript.
+
+#### Diretório `component`
+
+- Esse diretório contém seus componentes Vue. O Nuxt.js não carrega automaticamente esses componentes.
+
+#### Diretório `layouts`
+
+- Esse diretório contém os layouts da sua aplicação.
+_Este diretório não pode ser renomeado._
+
+#### Diretório `middleware`
+
+Esse diretório contém o Middleware de sua aplicação. O Middleware permite que você defina funções personalizadas que podem ser executadas antes de
+- renderizar uma página ou um grupo de páginas (layouts).
+
+#### Diretório `pages`
+
+Esse diretório contém as views e rotas da sua aplicação. O framework lê todos os arquivos `.vue` dentro desse
+- diretório e cria o router da aplicação.
+_Este diretório não pode ser renomeado._
+
+#### Diretório `plugins`
+
+- Esse diretório contém os plugins JavaScript que deseja executar antes de instanciar o aplicativo Vue.js da raiz.
+
+#### Diretório `static`
+
+- Esse diretório contém seus arquivos estáticos. Cada arquivo dentro deste diretório é mapeado para a raiz do seu site `/`. Exemplo: `/static/robots.txt` é mapeado como `http://seusite.com/robots.txt`
+_Este diretório não pode ser renomeado._
+
+#### Diretório `store`
+
+Esse diretório contém seus arquivos do **Vuex Store**. A opção Vuex Store é implementada na estrutura do Nuxt.js. A criação de um
+arquivo `index.js` neste diretório habilita essa opção automaticamente.
+_Este diretório não pode ser
+- renomeado._
+
+#### Arquivo `nuxt.config.js`
+
+- Esse arquivo contém a configuração personalizada do **Nuxt.js**.
+_Este arquivo não pode ser renomeado._
+
+#### Arquivo `package.json`
+
+- Esse arquivo contém suas dependências e scripts da sua aplicação.
+_Este arquivo não pode ser renomeado._
+
 
 > Veja na [documentação do Nuxt.js](https://nuxtjs.org/guide/directory-structure) para saber mais informações sobre esses diretórios e arquivos que eu citei acima.
 

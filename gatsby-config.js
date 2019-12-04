@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
-    siteUrl: `https://novela.narative.co`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: `Blog do nando />`,
+    name: `blog.nandomoreira.dev`,
+    siteUrl: `https://blog.nandomoreira.dev`,
+    description: `30 anos, minimalista, front-end, especialista em WordPress. Sempre em busca de um código bem escrito e de um bom café.`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: `Bem-vindo ao blog do nando />`,
       maxWidth: 652,
     },
     social: [

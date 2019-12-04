@@ -1,0 +1,62 @@
+---
+title: Criando formulário de contato para Wordpress com Odin Framework
+excerpt: Criado pelo Grupo WordPress Brasil, Odin é um framework com objetivo de turbinar e agilizar o desenvolvimento de temas para WordPress.
+hero: ./criando-formulario-de-contato-para-wordpress-com-odin-framework.png
+author: Fernando Moreira
+date: 2014-07-13
+---
+
+Faaaaaaaaala ai pessoas, tudo jóia?
+
+O tutorial de hoje está supimpa! Nós vamos criar formulários para Wordpress usando um framework chamado [Odin Framework](http://wpod.in/)
+
+Primeira coisa que você deve fazer é baixar o Odin, abra o site do Odin e clique no botão "Download Odin" ou se preferir o link está logo no final desse post.
+
+Você não precisa de todos os arquivos do Odin para implementar os formulários no seu site, basta que inclua apenas 2 arquivos, o `abstract-front-end-form.php` que está dentro do diretório `/core/classes/abstracts/` e o `class-contact-form.php` que está dentro de `/core/classes/`. **É necessário que seja os 2 arquivos pois um depende do outro!**
+
+Para esta demostração eu usei o tema [Twenty Twelve](http://wordpress.org/themes/twentytwelve "Twenty Twelve Wordpress Theme"). Dupliquei o arquivo `page.php` e criei um template chamado `contato.php`.
+
+> **Obs:** Para saber como criar um template no Wordpress acesse e leia esse link: [Page Template](http://codex.wordpress.org/Page_Templates "Wordpress Page Templates")
+
+Desse template eu removi o `while` padrão do tema e a linha onde está chamando o sitebar `get_sidebar();`
+
+Agora copie o 2 arquivos para dentro de alguma pasta do seu tema, eu criei um diretório chamado `contact-form/` e coloquei os 2 arquivos lá dentro.
+
+Para que tudo funcione corretamente precisamos incluir os arquivos no arquivo `functions.php` do tema. Primeiro o abstract-front-end-form e em seguida o class-contact-form assim:
+
+```php
+include 'contact-form/abstract-front-end-form.php';
+include 'contact-form/class-contact-form.php';
+```
+
+Eu criei um terceiro arquivo chamado `contact-form.php` no mesmo diretório e será nesse que iremos criar a função para criar o formulário de contato.
+
+Seguindo a [documentação do Odin](https://github.com/wpbrasil/odin/wiki/Classe-Odin_Contact_Form "Documentação do Odin Contact Form") iremos criar uma função chamada `odin_contact_form()`.
+
+```php
+function odin_contact_form() {
+  $form = new Odin_Contact_Form(
+    'form_id', // ID do formulário
+    'eu@email.com', // E-mail do destinatário.
+    array( 'vc@email.com', 'tu@email.com' ), // array com e-mails que receberão cópia.
+    array( 'alguem@email.com' ) // array com e-mails que receberão cópia oculta.
+    // array( 'class' => 'form' ) // array com atributos para o formulário.
+    // 'file' // string com método que será enviado o anexo, no caso 'file' como anexo e 'url' para enviar links.
+  );
+  return $form;
+}
+
+add_action( 'init', array( odin_contact_form(), 'init' ), 1 );
+```
+
+Nessa função você pode observar que instanciamos a classe `Odin_Contact_Form()` com alguns atributos obrigatórios como o **id do formulário** e o **e-mail do destinatário**, você também pode incluir um array de e-mails extras para receberem uma cópia da mensagem.
+
+Para criarmos os campos precisamos de um punhado de `arrays` e os mesmos precisam estar exatamente em seus devidos lugares para um funcionamento correto da classe do Odin. Para cada campo criado temos um `id`, uma `label` e um `type` que também são obrigatórios. Para mais detalhes da função consulte a [documentação do Odin](https://github.com/wpbrasil/odin/wiki/Classe-Odin_Contact_Form "Documentação do Odin Contact Form").
+
+O formulário de contato já está criado, mas temos que renderizar o mesmo no template que criamos alguns minutos atrás.
+
+Basta chamar a função `echo odin_contact_form()-&gt;render();` onde você quer que o seu formulário apareça, lembrando que `odin_contact_form()` é o nome da função com a instancia do `Odin_Contact_Form()` e os `arrays` dos campos, se você optou por criar a função com outro nome você chamaria assim: `formulario_de_contato()-&gt;render();`.
+
+> **Obs:** O Odin framework usa o HTML e as classes do [Bootstrap 3](http://getbootstrap.com/ "Bootstrap 3") então se você não está usando o BS3 como framework css você precisará formatar o seu formulário de contato, isso vale também para a mensagem de envio do formulário.
+
+[Odin Framework](https://github.com/wpbrasil/odin/archive/master.zip) [Arquivos do tutorial](https://app.box.com/s/hbb41skydme4ovz4my27)

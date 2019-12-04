@@ -1,17 +1,17 @@
-- name: Dennis Brotzky
+- name: Fernando Moreira
   bio: |
-    Written by You. This is where your author bio lives. Share your work, your
-    joys and of course, your Twitter handle.
-  avatar: ./avatars/dennis-brotzky.jpg
+    30 anos, minimalista, front-end, especialista em WordPress.
+    Sempre em busca de um código bem escrito e de um bom café.
+  avatar: ./nandomoreira.jpg
   featured: true
   social:
     - name: github
-      url: https://github.com
+      url: https://github.com/nandomoreirame
     - name: twitter
-      url: https://github.com
+      url: https://twitter.com/oseunando
     - name: instagram
-      url: https://github.com
+      url: https://instagram.com/oseunando
     - name: dribbble
-      url: https://github.com
+      url: https://dribbble.com/umdevux
     - name: linkedin
-      url: https://github.com
+      url: https://www.linkedin.com/in/nandomoreirame

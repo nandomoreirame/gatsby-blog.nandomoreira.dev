@@ -1,21 +1,14 @@
-import React from "react";
+import React from "react"
 
-import Layout from "@narative/gatsby-theme-novela/src/components/Layout";
-import Section from "@narative/gatsby-theme-novela/src/components/Section";
-import SEO from "@narative/gatsby-theme-novela/src/components/SEO";
-import Headings from "@narative/gatsby-theme-novela/src/components/Headings";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-function NotFoundPage() {
-  return (
-    <Layout>
-      <SEO />
-      <Section>
-        <div style={{ marginTop: "100px" }}>
-          <Headings.h1>404: Page Not Found</Headings.h1>
-        </div>
-      </Section>
-    </Layout>
-  );
-}
+const NotFoundPage = () => (
+  <Layout>
+    <SEO title="404: Not found" />
+    <h1>NOT FOUND</h1>
+    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  </Layout>
+)
 
-export default NotFoundPage;
+export default NotFoundPage

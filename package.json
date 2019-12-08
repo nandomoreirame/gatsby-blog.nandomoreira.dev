@@ -1,20 +1,45 @@
 {
+  "name": "blog.nandomoreira.dev",
   "private": true,
-  "name": "site",
+  "description": "Blog do nando </",
   "version": "1.0.0",
+  "author": "Fernando Moreira <nandomoreira.me@gmail.com>",
+  "dependencies": {
+    "gatsby": "^2.18.4",
+    "gatsby-image": "^2.2.34",
+    "gatsby-plugin-manifest": "^2.2.30",
+    "gatsby-plugin-offline": "^3.0.24",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sharp": "^2.3.4",
+    "gatsby-source-filesystem": "^2.1.39",
+    "gatsby-transformer-sharp": "^2.3.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
-    "build": "npm run clean && gatsby build",
-    "dev": "gatsby develop -H 0.0.0.0 -p 8000",
-    "deploy": "npm run build && netlify deploy --dir=public",
-    "release": "npm run deploy --prod",
-    "clean": "gatsby clean"
+    "build": "gatsby build",
+    "develop": "gatsby develop -H 0.0.0.0 -p 3000",
+    "dev": "npm run develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"No has tests lol\" && exit 0"
   },
-  "dependencies": {
-    "@narative/gatsby-theme-novela": "^0.*",
-    "gatsby": "^2.13.41",
-    "gatsby-plugin-manifest": "^2.2.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

@@ -26,9 +26,10 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop -H 0.0.0.0 -p 3000",
-    "dev": "npm run develop",
+    "build": "npm run clean && gatsby build",
+    "dev": "gatsby develop -H 0.0.0.0 -p 8000",
+    "deploy": "npm run build && netlify deploy --dir=public",
+    "release": "npm run deploy --prod",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

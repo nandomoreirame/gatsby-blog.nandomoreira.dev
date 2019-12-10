@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import theme from './theme'
 
 export default {
   list: styled.ul`
@@ -22,6 +23,7 @@ export default {
       line-height: 1;
       padding: 0.5rem;
       border-radius: 0.25rem;
+      color: ${theme.light.textColor};
 
       &:hover,
       &:focus {

@@ -1,14 +1,29 @@
 import styled from '@emotion/styled'
 import Layout from './layout'
+import theme from './theme'
 
 export default {
   header: styled(Layout.container)`
     margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
     text-align: center;
+    position: relative;
     @media (min-width: 480px) {
       margin-top: 5rem;
-      margin-bottom: 5rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 60px;
+      height: 0.25rem;
+      transform: translate3d(-50%, 0, 0);
+      background: ${theme.light.borderColor};
     }
   `,
 
@@ -91,27 +106,32 @@ export default {
       text-decoration: none;
       position: relative;
       opacity: 0.75;
+      text-decoration: underline;
       &::after {
         content: '';
         position: absolute;
         z-index: -1;
-        top: 70%;
+        top: 100%;
         left: -0.1px;
         right: -0.1px;
         bottom: 0;
-        transition: top 0.1s ease-in-out;
-        background-color: rgba(255, 250, 150, 0.8);
+        transition: top 0.12s ease-in-out;
+        background-color: ${theme.light.highlightColor};
       }
-      &:hover::after,
-      &:focus::after,
-      &:active::after {
-        top: 0;
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+        &::after {
+          top: 0;
+        }
       }
     }
   `,
 
   footer: styled(Layout.container)`
-    border-top: 1px solid #fef0f0;
+    border-top: 1px solid ${theme.light.borderColor};
+    margin-top: 6rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   `,

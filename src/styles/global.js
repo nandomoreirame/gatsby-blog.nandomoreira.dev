@@ -1,4 +1,5 @@
 import { css } from '@emotion/core'
+import theme from './theme'
 
 const baseFontFamily = `Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI',
       Ubuntu, Roboto, Helvetica, 'Helvetica Neue', Arial, sans-serif,
@@ -37,6 +38,14 @@ export default css`
     line-height: 1.4;
     text-rendering: optimizeLegibility;
   }
+  ::-moz-selection {
+    background: ${theme.light.highlightColor};
+    color: ${theme.light.blackColor};
+  }
+  ::selection {
+    background: ${theme.light.highlightColor};
+    color: ${theme.light.blackColor};
+  }
   html,
   body,
   #___gatsby,
@@ -50,8 +59,8 @@ export default css`
     -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
     -webkit-font-kerning: normal;
     -webkit-font-smoothing: antialiased;
-    background-color: #fff;
-    color: #4a4a4a;
+    background-color: ${theme.light.whiteColor};
+    color: ${theme.light.textColor};
     font-family: 'Nunito', ${baseFontFamily};
     font-feature-settings: 'kern', 'liga', 'clig', 'calt';
     font-kerning: normal;
@@ -63,9 +72,17 @@ export default css`
   a,
   button {
     text-decoration: none;
-    color: inherit;
     cursor: pointer;
     position: relative;
+  }
+  a {
+    color: ${theme.light.linkColor};
+    transition: 0.2s color ease-in-out;
+    &:hover,
+    &:active,
+    &:focus {
+      color: ${theme.light.linkColorHover};
+    }
   }
   h1,
   h2,
@@ -207,13 +224,15 @@ export default css`
       pointer-events: all;
     }
   }
+  :not(pre) > code[class*='language-'],
   code {
-    background-color: hsla(0, 0%, 0%, 0.04);
-    font-size: 0.8rem;
-    border-radius: 0.4rem;
+    background-color: #f0f0f0;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 75%;
+    border-radius: 0.15rem;
     font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
       'Liberation Mono', Menlo, Courier, monospace;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
   }
   pre code {
     background: none;

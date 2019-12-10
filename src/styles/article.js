@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import Layout from './layout'
+import theme from './theme'
 
 export default {
   item: styled.article`
@@ -10,7 +11,7 @@ export default {
       display: block;
       margin: 0;
       padding: 2.5rem 0;
-      border-bottom: 1px solid #fef0f0;
+      border-bottom: 1px solid ${theme.light.borderColor};
       transition: box-shadow 0.2s ease-in-out;
       @media (min-width: 420px) {
         padding: 5rem 0;
@@ -22,7 +23,7 @@ export default {
       &:focus,
       &:active {
         background-color: #fff;
-        box-shadow: 0 2px 43px -4px rgba(0, 0, 0, 0.19);
+        /* box-shadow: 0 2px 43px -4px ${theme.light.borderColor}; */
       }
     }
   `,
@@ -58,7 +59,8 @@ export default {
     margin: 0.5rem 0 0;
     font-size: 0.8rem;
     font-style: italic;
-    opacity: 0.75;
+    color: ${theme.light.textColor};
+    opacity: 0.65;
     .divider {
       display: inline-block;
       margin: 0 0.5rem;

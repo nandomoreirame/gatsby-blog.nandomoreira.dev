@@ -36,7 +36,6 @@ export default {
       font-size: 0.7rem;
       font-family: 'Montserrat', sans-serif;
       a {
-        color: #000;
         font-weight: 700;
       }
     }

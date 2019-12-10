@@ -47,13 +47,27 @@ export default {
     ul,
     ol,
     table,
-    blockquote {
+    blockquote,
+    .gatsby-resp-image-figure {
       display: block;
       margin-left: auto;
       margin-right: auto;
       max-width: 800px;
       padding-left: 1.2rem;
       padding-right: 1.2rem;
+    }
+    .gatsby-resp-image-figure {
+      max-width: 1000px;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 2.5rem;
+    }
+    .gatsby-resp-image-figcaption {
+      color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      font-size: 75%;
+      font-style: italic;
+      margin-top: 1rem;
     }
     ul,
     ol {

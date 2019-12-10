@@ -166,9 +166,17 @@ export default css`
       width: auto;
     }
   }
+  hr {
+    border: none;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 2.5rem 0;
+    width: 100%;
+  }
   blockquote {
     padding: 1.5625rem 0 1.5625rem 5.375rem;
     margin: 3.125rem 0;
+    font-weight: 400;
     display: block;
     position: relative;
     pointer-events: none;

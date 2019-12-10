@@ -4,6 +4,7 @@ const { resolve } = require('path')
 
 const today = new Date()
 const currentYear = today.getFullYear()
+const siteUrl = `https://blog.nandomoreira.dev`
 
 const plugins = [
   `gatsby-plugin-typescript`,
@@ -78,13 +79,23 @@ const plugins = [
     },
   },
   {
+    resolve: `gatsby-plugin-canonical-urls`,
+    options: { siteUrl },
+  },
+  {
     resolve: `gatsby-plugin-page-creator`,
     options: {
       path: resolve(__dirname, `src/pages`),
     },
   },
   `gatsby-plugin-offline`,
-  `gatsby-plugin-sitemap`,
+  {
+    resolve: `gatsby-plugin-sitemap`,
+    options: {
+      output: `/sitemap.xml`,
+      exclude: [`/404`, `/404.html`],
+    },
+  },
 ]
 
 if (process.env.CONTEXT === 'production') {
@@ -114,7 +125,7 @@ module.exports = {
     siteName: `nandomoreira`,
     siteDesc: `~apenas mais um programador`,
     description: `~apenas mais um programador é um blog de um desenvolvedor front-end, minimalista e especialista em WordPress. | Desenvolvedor Front-end em Curitiba | Desenvolvedor WordPress em Curitiba | Desenvolvedor Web em Curitiba | Programador em Curitiba`,
-    siteUrl: `https://blog.nandomoreira.dev`,
+    siteUrl,
     author: {
       name: `Fernando Moreira`,
       email: `hi@nandomoreira.dev`,

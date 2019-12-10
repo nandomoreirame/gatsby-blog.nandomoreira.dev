@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,6 +18,7 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
+            siteUrl
             author {
               social {
                 twitter
@@ -31,6 +32,7 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const { twitter } = site.siteMetadata.author.social
+  const ogImage = image || `/share.jpg`
 
   return (
     <Helmet
@@ -41,12 +43,24 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          name: `aplication-name`,
+          content: site.siteMetadata.title,
+        },
+        {
           name: `description`,
           content: metaDescription,
         },
         {
+          property: `og:locale`,
+          content: `pt_BR`,
+        },
+        {
+          property: `og:image`,
+          content: `${site.siteMetadata.siteUrl}${ogImage}`,
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           property: `og:description`,
@@ -58,7 +72,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:image:src`,
+          content: `${site.siteMetadata.siteUrl}${ogImage}`,
         },
         {
           name: `twitter:creator`,
@@ -66,25 +84,38 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          httpEquiv: `content-language`,
+          content: `pt-br`,
+        },
+        {
+          name: `robots`,
+          content: `index,follow,noodp`,
+        },
+        {
+          name: `country`,
+          content: `Brazil`,
+        },
+        {
+          name: `revisit-after`,
+          content: `7 days`,
+        },
+        {
+          rel: `author`,
+          content: `${site.siteMetadata.siteUrl}/humans.txt`,
+        },
+        {
+          rel: `index`,
+          content: `${site.siteMetadata.siteUrl}/`,
+        },
       ].concat(meta)}
-    >
-      <meta httpEquiv="content-language" content="pt-br" />
-      <meta name="robots" content="index,follow,noodp" />
-      <meta name="country" content="Brazil" />
-      <meta name="revisit-after" content="1 days" />
-      <meta name="resource-type" content="document" />
-      <meta name="distribution" content="global" />
-      <meta name="rating" content="general" />
-      <meta property="og:locale" content="pt_BR" />
-      <link rel="author" href={`/humans.txt`} />
-      <link rel="index" href={`/`} />
-    </Helmet>
+    />
   )
 }
 

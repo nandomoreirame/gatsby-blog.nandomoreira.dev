@@ -15,7 +15,7 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
   const { readingTime } = fields
 
   const imageUrl = image.publicURL
-  const imageAlt = image.name.replace(/(\-)/g, ' ')
+  // const imageAlt = image.name.replace(/(\-)/g, ' ')
   const minutes = timeToRead.toFixed()
   const words = readingTime.words
 
@@ -29,7 +29,11 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
 
   return (
     <Layout>
-      <SEO title={title} description={description || excerpt} />
+      <SEO
+        title={title}
+        description={description || excerpt}
+        image={imageUrl}
+      />
       <Single.header>
         <Single.title>{title}</Single.title>
         <Single.meta>

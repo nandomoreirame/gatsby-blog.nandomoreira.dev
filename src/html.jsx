@@ -16,7 +16,8 @@ export default function HTML(props) {
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
-          This app works best with JavaScript enabled.
+          Este site funciona melhor com o JavaScript ativado. Por favor,
+          ative-o.
         </noscript>
         <div
           key={`body`}

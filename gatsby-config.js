@@ -1,48 +1,112 @@
-const rupture = require('rupture')
+const { resolve } = require('path')
+
+const today = new Date()
+const currentYear = today.getFullYear()
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-  },
-  plugins: [
-    {
-      resolve: `gatsby-plugin-stylus`,
-      options: {
-        use: [rupture()],
+    title: `Blog do Nando </`,
+    siteName: `nandomoreira`,
+    siteDesc: `~apenas mais um programador`,
+    description: `Sou um desenvolvedor front-end. Ajudo ONGs e pequenas empresas a criar projetos web personalizados de alta qualidade. No meu tempo livre eu escrevo em meu blog e contribuo com projetos open source | Desenvolvedor Front-end em Curitiba | Desenvolvedor WordPress em Curitiba | UX Designer em Curitiba`,
+    author: {
+      name: `Fernando Moreira`,
+      email: `hi@nandomoreira.dev`,
+      site: `https://nandomoreira.dev`,
+      bio: `${currentYear -
+        1989} anos, minimalista, front-end e especialista em WordPress. Sempre em busca de um código bem escrito e de um bom café.`,
+      phone: `5541984401163`,
+      social: {
+        twitter: `oseunando`,
+        instagram: `oseunando`,
+        behance: `umdevux`,
+        github: `nandomoreirame`,
+        dribbble: `umdevux`,
+        facebook: `oseunando`,
+        linkedin: `nandomoreirame`,
+        codepen: `oseunando`,
+        npm: `~nandomoreira.me`,
+        paypal: `nandomoreira`,
+        disqus: `fernandomoreira`,
       },
     },
+  },
+  plugins: [
+    `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1300,
+            },
+          },
+          `gatsby-remark-reading-time`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              aliases: { sh: 'bash', js: 'javascript' },
+              showLineNumbers: true,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        path: resolve(__dirname, 'content', 'blog'),
+        name: `blog`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: resolve(__dirname, 'content', 'assets'),
+        name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: resolve(__dirname, 'content'),
+        name: `content`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Montserrat:700,800', 'Nunito:400,600,700'],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `blog.nandomoreira.dev`,
+        short_name: `blog do nando`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: resolve(__dirname, `src/pages`),
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography.js`,
-      },
-    },
   ],
 }

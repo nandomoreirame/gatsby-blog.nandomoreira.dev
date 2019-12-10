@@ -96,7 +96,11 @@ export default {
     }
   `,
 
-  footer: styled(Layout.container)``,
+  footer: styled(Layout.container)`
+    border-top: 1px solid #fef0f0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  `,
 
   comments: styled.aside`
     padding: 2.5rem 0 0;

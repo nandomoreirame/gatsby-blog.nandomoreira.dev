@@ -44,6 +44,7 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
               >
                 {author.name}
               </a>
+              .
             </strong>
           </span>
           <span className="divider" />
@@ -53,7 +54,7 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
               {minutes} minuto
               {`${minutes > 1 ? 's' : ''}`}
             </strong>{' '}
-            - {words} palavras
+            - {words} palavras.
           </span>
         </Single.meta>
       </Single.header>
@@ -70,6 +71,7 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
             >
               {author.name}
             </a>
+            .
           </strong>
         </Single.meta>
       </Single.footer>

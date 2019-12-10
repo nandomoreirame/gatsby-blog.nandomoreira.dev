@@ -14,7 +14,7 @@ tags:
 
 ## Introdução
 
-O [Gatsby](https://www.gatsbyjs.org/) é uma ótima ferramenta para desenvolver lindos projetos utilizando [React](https://reactjs.org/) e unindo o recurso de **<abbr title="Server Side Rendering">SSR</abbr>** e **<abbr title="Single Page Application">SPA</abbr>**, sem contar que ele é um gerador de artivos estáticos, que facilita muito **SEO** e **acessibilidade** do seu site.
+O [Gatsby](https://www.gatsbyjs.org/) é uma ótima ferramenta para desenvolver lindos projetos utilizando [React](https://reactjs.org/) e unindo o recurso de **<abbr title="Server Side Rendering">SSR</abbr>** e **<abbr title="Single Page Application">SPA</abbr>**, sem contar que ele é um gerador de arquivos estáticos, que facilita muito **SEO** e **acessibilidade** do seu site.
 
 O Gatsby, assim como é uma boa prática em todos os projetos <abbr title="Single Page Application">SPA</abbr>, usa o recurso da tag `<noscript>` para exibir uma mensagem para o usuário informando que o site funciona melhor com o [JavaScript](https://link) habilitado no navegador.
 

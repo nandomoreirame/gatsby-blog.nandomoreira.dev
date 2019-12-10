@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: */tags/
 Allow: /
-sitemap: https://nandomoreira.dev/sitemap.xml
+sitemap: https://blog.nandomoreira.dev/sitemap.xml

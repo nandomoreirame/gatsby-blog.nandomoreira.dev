@@ -15,8 +15,8 @@ import SiteFooter from './footer'
 import { globalStyles } from '@styles'
 import { iLayoutProps } from '@types'
 
-const Layout = ({ children, ...props }: iLayoutProps) => {
-  const data = useStaticQuery(graphql`
+const Layout = ({ children }: iLayoutProps) => {
+  const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -28,18 +28,18 @@ const Layout = ({ children, ...props }: iLayoutProps) => {
   `)
 
   return (
-    <div {...props}>
+    <>
       <Global styles={globalStyles} />
       <SiteHeader
-        title={data.site.siteMetadata.siteName}
-        desc={data.site.siteMetadata.siteDesc}
+        title={site.siteMetadata.siteName}
+        desc={site.siteMetadata.siteDesc}
       />
       <main id="content">{children}</main>
       <SiteFooter
-        title={data.site.siteMetadata.siteName}
-        desc={data.site.siteMetadata.siteDesc}
+        title={site.siteMetadata.siteName}
+        desc={site.siteMetadata.siteDesc}
       />
-    </div>
+    </>
   )
 }
 

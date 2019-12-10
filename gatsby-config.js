@@ -16,7 +16,11 @@ const plugins = [
         {
           resolve: `gatsby-remark-images`,
           options: {
-            maxWidth: 1300,
+            maxWidth: 960,
+            quality: 90,
+            withWebp: true,
+            linkImagesToOriginal: false,
+            showCaptions: true,
           },
         },
         `gatsby-remark-reading-time`,
@@ -62,11 +66,11 @@ const plugins = [
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `blog.nandomoreira.dev`,
-      short_name: `blog do nando`,
+      name: `blog do nando`,
+      short_name: `bnando`,
       start_url: `/`,
-      background_color: `#663399`,
-      theme_color: `#663399`,
+      background_color: `#000`,
+      theme_color: `#000`,
       display: `minimal-ui`,
       icon: `static/icon.png`,
     },
@@ -77,8 +81,6 @@ const plugins = [
       path: resolve(__dirname, `src/pages`),
     },
   },
-  // this (optional) plugin enables Progressive Web App + Offline functionality
-  // To learn more, visit: https://gatsby.dev/offline
   `gatsby-plugin-offline`,
   `gatsby-plugin-sitemap`,
 ]
@@ -110,6 +112,7 @@ module.exports = {
     siteName: `nandomoreira`,
     siteDesc: `~apenas mais um programador`,
     description: `Sou um desenvolvedor front-end. Ajudo ONGs e pequenas empresas a criar projetos web personalizados de alta qualidade. No meu tempo livre eu escrevo em meu blog e contribuo com projetos open source | Desenvolvedor Front-end em Curitiba | Desenvolvedor WordPress em Curitiba | UX Designer em Curitiba`,
+    siteUrl: `https://blog.nandomoreira.dev`,
     author: {
       name: `Fernando Moreira`,
       email: `hi@nandomoreira.dev`,

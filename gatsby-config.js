@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const { resolve } = require('path')
 
 const today = new Date()
@@ -111,7 +113,7 @@ module.exports = {
     title: `Blog do Nando </`,
     siteName: `nandomoreira`,
     siteDesc: `~apenas mais um programador`,
-    description: `Sou um desenvolvedor front-end. Ajudo ONGs e pequenas empresas a criar projetos web personalizados de alta qualidade. No meu tempo livre eu escrevo em meu blog e contribuo com projetos open source | Desenvolvedor Front-end em Curitiba | Desenvolvedor WordPress em Curitiba | UX Designer em Curitiba`,
+    description: `~apenas mais um programador é um blog de um desenvolvedor front-end, minimalista e especialista em WordPress. | Desenvolvedor Front-end em Curitiba | Desenvolvedor WordPress em Curitiba | Desenvolvedor Web em Curitiba | Programador em Curitiba`,
     siteUrl: `https://blog.nandomoreira.dev`,
     author: {
       name: `Fernando Moreira`,

@@ -2,6 +2,7 @@
 path: '/retro-2016-planing-2017'
 title: Retro 2016 Planing 2017
 date: 2017-01-01
+datePublished: 2017-01-01
 description: 2016 não foi um ano ruim, tanto na minha vida profissional quando na minha vida pessoal, confesso que tive alguns obstáculos, mas todos foram ultrapassados com sucesso.
 category:
   - geral
@@ -9,6 +10,7 @@ tags:
   - refrexão
 image: ../../../assets/2017/01/retro-2016-planing-2017.jpg
 ---
+
 ## Retrospectiva 2016
 
 2016 não foi um ano ruim, tanto na minha vida profissional quando na minha vida pessoal, confesso que tive alguns obstáculos, mas todos foram ultrapassados com sucesso.
@@ -58,6 +60,7 @@ Eu tive a oportunidade de trabalhar em uma startup chamada **[Pipefy](http://www
 Em 2016 eu comecei a trabalhar na **[LojasKD](https://www.lojaskd.com.br/)**, onde tenho o prazer de trabalhar com pessoas incríveis, estou muito feliz em poder ajudar a melhorar e construir um projeto que vende algumas dezenas de milhares por dia.
 
 ---
+
 ## Planing 2017
 
 Quero fazer em 2017 o dobro das coisas que fiz em 2016.
@@ -83,6 +86,7 @@ Quero fazer a diferença.
 **Seja muito bem vindo 2017.**
 
 ---
+
 ## Conclusão
 
 Eita esse 2016 hein...

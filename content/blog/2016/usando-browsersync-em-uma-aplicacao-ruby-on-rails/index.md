@@ -5,12 +5,14 @@ description: 'Hoje vou explicar como integrar e usar o Browsersync.io dentro de 
 keywords: 'rails, ruby, npm, browsersync, node, frontend, front-end'
 image: ../../../assets/painel-browsersync-io.png
 date: 2016-06-20
+datePublished: 2016-06-20
 category:
   - rails
 tags:
   - rails
   - npm
 ---
+
 ![Usando Browsersync em uma aplicação Ruby on Rails](../../../assets/painel-browsersync-io.png)
 
 Aplicações Rails são magníficas não é mesmo? Todas aquelas Gems "mágicas", que fazem de tudo e um pouco mais, são lindas de se ver.
@@ -64,6 +66,7 @@ Caso você não queira que o navegador abra automaticamente basta colocar `--no-
 Os comandos do Browsersync são bem fáceis de entender e se você já esta acostumado com outros comandos no terminal será bem tranquilo. Para saber mais leia em [browsersync.io/docs/command-line/](https://www.browsersync.io/docs/command-line)
 
 ---
+
 Espero ter ajudado, Abraço!
 
 😎

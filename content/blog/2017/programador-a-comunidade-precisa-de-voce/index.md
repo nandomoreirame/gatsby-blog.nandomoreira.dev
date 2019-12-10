@@ -2,6 +2,7 @@
 path: '/programador-a-comunidade-precisa-de-voce'
 title: Programador a comunidade precisa de você!
 date: 2017-03-12
+datePublished: 2017-03-12
 description: Sobre o porquê de alguns desenvolvedores não contribuem com a comunidade open-source.
 image: ../../../assets/2017/03/programador-a-comunidade-precisa-de-voce.jpeg
 category:
@@ -10,6 +11,7 @@ tags:
   - geral
   - comunidade
 ---
+
 ## Prólogo
 
 Esse texto é para tentar responder algumas perguntas que me faço todos os dias, perguntas essas que você vai ler no decorrer desse texto.
@@ -34,6 +36,7 @@ Ou pior ainda.
 - "O que é Github?"
 
 ---
+
 ## A importância de se ter um GitHub
 
 Pode ser que você não saiba o que é o **[GitHub](https://github.com/)**, caro desenvolvedor, ou não contribua com a comunidade por falta de tempo, ou não achar necessário, ou porque não quer mesmo no momento, eu entendo.

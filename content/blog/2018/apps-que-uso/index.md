@@ -3,6 +3,7 @@ path: '/apps-que-uso'
 title: Aplicativos que uso
 description: Criei essa lista de apps que uso todos os dias, espero que gostem
 date: 2018-09-29
+datePublished: 2018-09-29
 category:
   - dicas
 tags:
@@ -10,6 +11,7 @@ tags:
   - apps
 image: ../../../assets/apps-que-uso-google-chrome-canary.png
 ---
+
 ### Navegadores
 
 - **[Google Chrome](https://www.google.com.br/chrome/browser/desktop/index.html)**: MELIOR navegador de todos os tempos.
@@ -69,6 +71,7 @@ image: ../../../assets/apps-que-uso-google-chrome-canary.png
 - **[Battery Monitor](https://itunes.apple.com/us/app/battery-monitor-health-info/id836505650?mt=12)**: Monitor de bateria, como ele eu monitoro a saúde, os ciclos e a capacidade da bateria.
 
 ---
+
 ## Atalhos mais utilizados
 
 - **MacOS**

@@ -10,8 +10,16 @@ import { Template } from '@types'
 
 const SingleTemplate: Template = ({ pageContext, data }) => {
   const { frontmatter, html, timeToRead, fields } = data.markdownRemark
-  const { path, image, title, description, date, excerpt } = frontmatter
-  const { author } = data.site.siteMetadata
+  const {
+    path,
+    image,
+    title,
+    description,
+    date,
+    datePublished,
+    excerpt,
+  } = frontmatter
+  const { author, siteUrl } = data.site.siteMetadata
   const { readingTime } = fields
 
   const imageUrl = image.publicURL
@@ -26,6 +34,34 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
       title,
     },
   }
+
+  const schemaScript = `<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "${title}"
+    },
+    "headline": "${title}",
+    "image": [
+      "${siteUrl}${imageUrl}"
+     ],
+    "datePublished": "${datePublished}",
+    "dateModified": "${datePublished}",
+    "author": {
+      "@type": "Person",
+      "name": "${author.name}"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Gatsby",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "${siteUrl}/gatsby.svg"
+      }
+    },
+    "description": "${description || excerpt}"
+  }</script>`
 
   return (
     <Layout>
@@ -62,7 +98,9 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
           </span>
         </Single.meta>
       </Single.header>
-      <Single.content dangerouslySetInnerHTML={{ __html: html }} />
+      <Single.content
+        dangerouslySetInnerHTML={{ __html: `${html}${schemaScript}` }}
+      />
       <Single.footer>
         <Single.meta>
           Publicado <strong>{date}</strong> por{' '}
@@ -91,6 +129,7 @@ export const pageQuery = graphql`
   query($path: String!) {
     site {
       siteMetadata {
+        siteUrl
         author {
           name
           site
@@ -107,6 +146,7 @@ export const pageQuery = graphql`
       frontmatter {
         category
         date(locale: "pt-br", fromNow: true)
+        datePublished
         description
         path
         tags

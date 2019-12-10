@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 import Layout from './layout'
 
 export default {
-  aside: styled.aside`
+  aside: css`
     display: block;
     margin: 2rem auto 0;
     background-color: #fafafa;

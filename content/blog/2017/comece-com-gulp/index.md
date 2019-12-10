@@ -2,6 +2,7 @@
 path: '/comece-com-gulp'
 title: Comece com Gulp!
 date: 2017-01-08
+datePublished: 2017-01-08
 description: Eu particularmente gosto muito de ganhar tempo com o desenvolvimento dos meus projetos e usar automatizador de tarefas me dá esse poder.
 image: ./comece-com-gulp.png
 category:

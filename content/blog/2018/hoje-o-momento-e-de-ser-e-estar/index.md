@@ -3,6 +3,7 @@ path: '/hoje-o-momento-e-de-ser-e-estar'
 title: Hoje o momento é de SER e ESTAR e não de TER!
 description: Você já parou para pensar o quanto você é manipulado pelos outros? Já parou para pensar em que ponto da sua vida você está nesse momento?
 date: 2018-10-05
+datePublished: 2018-10-05
 category:
   - vida
 tags:

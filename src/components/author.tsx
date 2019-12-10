@@ -12,9 +12,19 @@ const Author = () => (
       const { author } = site.siteMetadata
 
       return (
-        <AuthorBox.aside>
+        <aside
+          itemScope
+          itemType="http://schema.org/Person"
+          css={AuthorBox.aside}
+        >
           <AuthorBox.inner>
-            <Image node={avatar} alt={`Foto de ${author.name}`} />
+            <meta itemProp="jobTitle" content="desenvolvedor front-end" />
+            <meta itemProp="worksFor" content="Onedev.studio" />
+            <Image
+              node={avatar}
+              alt={`Foto de ${author.name}`}
+              itemProp="image"
+            />
             <AuthorBox.bio>
               <h3>
                 <a
@@ -22,15 +32,18 @@ const Author = () => (
                   title={`ir ao site de ${author.name}`}
                   data-label={`ir ao site de ${author.name}`}
                   target="_blank"
+                  itemProp="name"
                 >
                   {author.name}
                 </a>
               </h3>
-              <p>{author.bio}</p>
+              <p role="presentation" itemProp="description">
+                {author.bio}
+              </p>
               <Social items={author.social} />
             </AuthorBox.bio>
           </AuthorBox.inner>
-        </AuthorBox.aside>
+        </aside>
       )
     }}
   />

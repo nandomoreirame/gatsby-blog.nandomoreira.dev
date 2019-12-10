@@ -3,6 +3,7 @@ path: '/customizando-a-mensagem-noscript-no-gatsby'
 title: Customizando mensagem da tag noscript no Gatsby
 description: 'Nesse artigo vou explicar como customizar a mensagem da tag noscript usando o recurso do próprio Gatsby para alterar o HTML base da aplicação.'
 date: 2019-03-19
+datePublished: 2019-03-19
 image: ./customizando-a-mensagem-noscript-no-gatsby.png
 category:
   - Gatsby

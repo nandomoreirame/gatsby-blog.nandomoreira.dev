@@ -2,6 +2,7 @@
 path: '/wordpress-plugins-x-functions-php'
 title: 'Wordpress - plugins x functions.php'
 date: 2015-07-24
+datePublished: 2015-07-24
 description: 'Muitos amigos e colegas de trabalho sempre me perguntam porque eu sou contra o uso de plugins no Wordpress.'
 image: './wordpress-plugins-x-functions-php.jpg'
 keywords: 'wordpress, plugins, funcoes, php, dicas'
@@ -9,6 +10,7 @@ category:
   - wordpress
 tags: ['wordpress', 'dicas', 'php']
 ---
+
 Muitos amigos e colegas de trabalho sempre me perguntam porque eu sou contra o uso de plugins no Wordpress.
 
 A resposta é simples, não tem porque pegar um elefante e tentar colocar dentro de um fusca, algum dia algum deles vai reclamar, ou o elefante com dores no corpo ou o fusca vai quebrar em algum ponto do trajeto.

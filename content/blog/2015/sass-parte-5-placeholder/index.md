@@ -2,6 +2,7 @@
 path: '/sass-parte-5-placeholder'
 title: '#5 - Conhecendo o pré-processador SASS | Placeholder'
 date: 2015-09-27
+datePublished: 2015-09-27
 description: 'Uma das funcionalidades mais legais do SASS é você poder criar placeholders para agrupamento de códigos repetidos'
 keywords: 'sass, css, scss, pre-processador, pre-processadores'
 image: ../conhecendo-o-pre-processador-sass-parte-1/conhecendo-o-pre-processador-sass.jpg

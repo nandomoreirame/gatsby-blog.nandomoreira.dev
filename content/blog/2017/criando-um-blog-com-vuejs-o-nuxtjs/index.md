@@ -1,6 +1,7 @@
 ---
 path: '/criando-um-blog-com-vuejs-o-nuxtjs'
 date: 2017-11-05
+datePublished: 2017-11-05
 title: 'Criando um blog com Vue.js e Nuxt.js'
 description: 'Essa é a parte 1 de uma série onde iremos usar a tecnologia SSR (Server Side Rendering) para criar um blog e no final hospeda-lo no GitHub pages e no Netlify.'
 image: ../../../assets/criando-um-blog-com-javascript-vuejs.jpg
@@ -10,6 +11,7 @@ tags:
   - vue
   - javascript
 ---
+
 ## Introdução
 
 Todo mundo (devs) tá acostumado a criar blogs utilizando o [Jekyll](https://jekyllrb.com) e hospedá-los no [GitHub pages](https://pages.github.com/). E se eu disser que existem muitas outras plataformas para criar projetos estáticos?
@@ -37,6 +39,7 @@ Um aplicativo Vue.js criado pelo servidor também pode ser considerado **"isomó
 Utilizando SSR podemos manter a acessibilidade padrão do HTML e deixá-lo acessivel por bots como o Google e outros, juntando assim o melhor dos dois mundos, SEO + SPA.
 
 ---
+
 ## Instalando
 
 Para instalar o Nuxt.js você precisa dos seguintes pré-requisitos:
@@ -71,6 +74,7 @@ vue init nuxt-community/starter-template blog-with-vuejs \
 3. Instalamos as dependencias do projeto com o comando: `yarn` (Você também pode executar `yarn install` ou `npm install`)
 
 ---
+
 ## Estrutura de um projeto Nuxt.js
 
 A estrutura padrão de um aplicativo **Nuxt.js** destina-se a fornecer um ótimo ponto de partida para pequenas e grandes aplicações. Claro, você é livre para organizar seu aplicativo, como quiser.
@@ -129,6 +133,7 @@ A estrutura padrão de um aplicativo **Nuxt.js** destina-se a fornecer um ótimo
 > Veja na [documentação do Nuxt.js](https://nuxtjs.org/guide/directory-structure) para saber mais informações sobre esses diretórios e arquivos que eu citei acima.
 
 ---
+
 ## Executando
 
 Agora vamos rodar o projeto que foi criado pelo Vue-cli em desenvolvimento, para isso basta executar o comando `yarn dev` ou `npm run dev` em seu terminal.
@@ -194,6 +199,7 @@ Se você visualizar o código fonte você verá todo o HTML renderizado pelo Nux
 Note que dentro da tag `<body>` não tem apenas o famoso div `<div id="app"></div>` como estamos acostumados a ver em SPA`s feitas com Vue e esse é o maior ponto positivo de um app que usa **SSR**.
 
 ---
+
 See you ✌️
 
 / end

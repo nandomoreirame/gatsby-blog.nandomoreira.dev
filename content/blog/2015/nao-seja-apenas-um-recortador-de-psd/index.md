@@ -2,6 +2,7 @@
 path: '/nao-seja-apenas-um-recortador-de-psd'
 title: 'Não seja apenas um recortador de PSD!'
 date: 2015-12-10
+datePublished: 2015-12-10
 description: 'Durante minha trajetória até aqui eu já trabalhei com alguns programadores e designers que discordariam completamente da minha opinião'
 keywords: 'front-end, frontend, psd, reflexao'
 image: ../../../assets/2015/12/skate.gif
@@ -10,6 +11,7 @@ category:
 tags:
   - front-end
 ---
+
 > **Nota:** Eu pensei muito antes de escrever esse artigo, sério! Não sou muito bom em passar sermão ou dicas por textos, mas vamos lá...
 
 ## Um assunto polêmico

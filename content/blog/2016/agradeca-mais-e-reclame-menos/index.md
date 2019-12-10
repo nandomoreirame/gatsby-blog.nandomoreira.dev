@@ -3,12 +3,14 @@ path: '/agradeca-mais-e-reclame-menos'
 title: 'Reflexão: agradeça mais e reclame menos'
 description: 'Você já parou pra pensar quantas vezes você reclama por dia, ou quantas vezes você reclamou hoje?'
 date: 2016-08-23
+datePublished: 2016-08-23
 image: ./thanks.gif
 category:
   - geral
 tags:
   - reflexão
 ---
+
 Você já parou pra pensar quantas vezes você reclama por dia, ou quantas vezes você reclamou hoje? Vamos lá, faça um teste! Você vai ficar surpreso em saber que reclamações fazem parte do nosso dia-a-dia e nem percebemos.
 
 E se a gente substituir nossas reclamações diárias por agradecimentos?
@@ -32,6 +34,7 @@ Vamos pegar o exemplo das posições 1º, 2º e 3º lugar nas Olimpíadas Rio 20
 Porque não agradecer por ter participado de uma olimpíada, poder correr ao lado de grandes atletas ou ganhar o 3º lugar? Pois foi o que aconteceu comigo nos últimos meses.
 
 ---
+
 ### Pipefy
 
 Semana passada eu perdi meu emprego, um trabalho que eu amava apesar de tudo, uma empresa _cool_, divertida, com pessoas jovens e motivadas.
@@ -51,6 +54,7 @@ Eu poderia ficar triste por não contribuir mais com o crescimento do produto, m
 > E se substituirmos nossas reclamações diárias por agradecimentos, vamos fazer um teste?
 
 ---
+
 ### Conclusão
 
 Sempre que acontece algo ruim no meio do caminho simplesmente não conseguimos enxergar o que aconteceu de bom, não por maldade isso é natural no ser humano.

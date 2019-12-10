@@ -2,6 +2,7 @@
 path: '/conhecendo-o-pre-processador-sass-parte-1'
 title: '#1 - Conhecendo o pré-processador SASS | Instalação'
 date: 2015-09-01
+datePublished: 2015-09-01
 description: 'Todo desenvolvedor web deveria conhecer algum pré-processador CSS, seja ele Less, SASS, Stylus ou qualquer outro'
 image: './conhecendo-o-pre-processador-sass.jpg'
 category:

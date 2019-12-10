@@ -5,6 +5,7 @@ description: 'Nesse artigo vou mostrar como instalar a WP-CLI, uma interface de 
 keywords: 'wordpress, wp, cli, wp-cli, comando, linha, interface'
 image: ../../../assets/wp-cli-help.png
 date: 2016-01-10
+datePublished: 2016-01-10
 category:
   - wordpress
 tags:
@@ -12,6 +13,7 @@ tags:
   - cli
   - wpcli
 ---
+
 Nesse artigo vou mostrar como instalar a [WP-CLI](http://wp-cli.org/), uma interface de linha de comando para WordPress.
 
 **WP-CLI** significa _WordPress Command Line Interface_ traduzindo para o português _interface de linha de comando_.
@@ -19,6 +21,7 @@ Nesse artigo vou mostrar como instalar a [WP-CLI](http://wp-cli.org/), uma inter
 A instalação é bem simples, basta que você tenha o <abbr title="PHP: Hypertext Preprocessor">PHP</abbr> instalado em sua máquina.
 
 ---
+
 ## Instalando (e atualizando)
 
 Primeiro, faça o download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) usando `wget` ou `curl`. Por exemplo:
@@ -45,6 +48,7 @@ Agora é só executar `wp --info`.
 > O texto acima foi uma tradução de [WP-CLI](http://wp-cli.org/).
 
 ---
+
 ## WP-CLI instalado e agora?
 
 Executando `wp help` ou apenas `wp` ele nos trará uma lista de subcomandos.
@@ -64,6 +68,7 @@ Fácil não?
 ![wp-cli theme status](../../../assets/wp-cli-theme-status.png)
 
 ---
+
 ## Palestra
 
 Tem um vídeo muito bom de uma palestra do **[Rodrigo Primo](https://github.com/rodrigoprimo)** no WordCamp Belo Horizonte em 2014.

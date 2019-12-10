@@ -2,6 +2,7 @@
 path: '/como-testar-erros-na-funcao-wp_mail-no-wordpress-usando-hooks'
 title: Como testar erros na função wp_mail() no WordPress usando hooks
 date: 2018-03-14
+datePublished: 2018-03-14
 category:
   - wordpress
 tags:

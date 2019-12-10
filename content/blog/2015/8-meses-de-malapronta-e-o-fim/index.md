@@ -2,6 +2,7 @@
 path: '/8-meses-de-malapronta-e-o-fim'
 title: '8 meses de MalaPronta e o fim.'
 date: 2015-09-30
+datePublished: 2015-09-30
 description: 'Eu queria poder dizer que to feliz com tudo isso, mas não to. Eu amava trabalhar lá, apesar de muitas intrigas e desavenças, eu amava meu emprego.'
 image: ../../../assets/2015/09/galera-do-porao-malapronta.jpg
 category:

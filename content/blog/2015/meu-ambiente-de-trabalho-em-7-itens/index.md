@@ -2,6 +2,7 @@
 path: '/meu-ambiente-de-trabalho-em-7-itens'
 title: 'Meu ambiente de trabalho em 7 itens'
 date: 2015-08-01
+datePublished: 2015-08-01
 description: 'Aderi ao GNU linux como OS padrão no final de 2014, apesar de usá-lo desde 2009.'
 keywords: 'trabalho, ambiente, desenvolvimento, dicas'
 image: './meu-ambiente-de-trabalho-em-7-itens.png'
@@ -9,6 +10,7 @@ category:
   - workspace
 tags: ['workspace', 'ambiente', 'desenvolvimento']
 ---
+
 ![Meu ambiente de trabalho em 7 itens](./meu-ambiente-de-trabalho-em-7-itens.png)
 
 ### 1. Sistema Operacional - Hoje sou livre!
@@ -20,6 +22,7 @@ Uso **Ubuntu 15.04** com **Gnome-shell 3.14** pois acho ele muito bonito, elegan
 ![Detalhes do sistema](../../../assets/meu-ambiente-de-trabalho-detalhes-do-sistema.png)
 
 ---
+
 ### 2. Editor de código
 
 Uso o [Sublime text 3](http://www.sublimetext.com/3) como editor de código padrão, gratuito e indispensável para um desenvolvedor front-end
@@ -52,6 +55,7 @@ Eu costumo sempre que instalar meu **Sublime Text**, já sair instalando meus pa
 - Theme - Cobalt2
 
 ---
+
 ### 3. Linha de comando
 
 Usei por algums meses o **[Guake Terminal](http://guake.org/)** pelo simples fato de ser _dropdown_, logo migrei para o **[Terminator](http://gnometerminator.blogspot.com.br/p/introduction.html)** porque gostei da ideia de dividir a tela do terminal em múltiplas telinhas menores, mas ele não era _dropdown_, fiquei triste por algum tempo até encontrar o **[Yakuake](http://kde-apps.org/content/show.php?content=29153)**, um terminal que use o _dropdown_ com o divisão de múltiplas telas.
@@ -63,6 +67,7 @@ Ah! Não poderia esquecer do **[Fish shell](http://fishshell.com/)**, com ele tu
 ![Yakuake e fish shell](../../../assets/meu-ambiente-linha-de-comando-yakuake-fish-shell.png)
 
 ---
+
 ### 4. Controle de versão
 
 Mas é claro que é o **Git**, não precisaria nem discutir isso aqui pelo simples fato de que é o melhor controle de versão já desenvolvido.
@@ -72,6 +77,7 @@ Uso **[Github](http://github.com/nandomoreirame)** para repositórios públicos 
 ![Github](../../../assets/meu-ambiente-github.jpg)
 
 ---
+
 ### 5. Pré-processador
 
 Todo front-end precisa usar um **[pré-processador](https://goo.gl/G79yVN)**, seja ele **LESS**, **SASS(SCSS)**, **Stylus** ou qualquer outro, isso não é uma opção, é um item necessário para um bom front-end.
@@ -81,6 +87,7 @@ Eu uso **[SASS/SCSS](http://sass-lang.com/)**, apesar de ouvir falar muito bem d
 ![SASS e Compass](../../../assets/meu-ambiente-sass-compass.jpg)
 
 ---
+
 ### 6. Automatizador de tarefas
 
 **Gulp**, mas por que? Porque sim.
@@ -112,6 +119,7 @@ Junto com ele uso uma série de _packages_, que são indispensáveis em meu arse
 ### 7. Controle de tarefas
 
 ---
+
 Nós usamos o **[Jira](https://www.atlassian.com/software/jira)** lá na **[MalaPronta.com](http://www.malapronta.com.br)** um software incrível da **Atlassian** a mesma empresa que criou o **Bitbucket**.
 
 ![Jira Atlassian](../../../assets/meu-ambiente-jira.png)
@@ -119,6 +127,7 @@ Nós usamos o **[Jira](https://www.atlassian.com/software/jira)** lá na **[Mala
 Pessoalmente eu sou meio desorganizado quanto a isso, preciso me gerenciar melhor. Eu uso o **[Google Keep](https://keep.google.com/)** para anotações rápidas, pelo fato de ter o sincronismo com todos os meus aparelhos rapidamente.
 
 ---
+
 ### Conclusão
 
 Espero que meu ambiente de trabalho inspire você como desenvolvedor front-end no mercado de trabalho, que vocẽ possa aperfeiçoar seu dia-a-dia como desenvolvedor e que algumas dessas ferramentas que citei aqui sirva para você também.

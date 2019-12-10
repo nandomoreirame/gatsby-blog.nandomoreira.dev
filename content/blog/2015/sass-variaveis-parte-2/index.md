@@ -2,6 +2,7 @@
 path: '/sass-variaveis-parte-2'
 title: '#2 - Conhecendo o pré-processador SASS | Variáveis'
 date: 2015-09-02
+datePublished: 2015-09-02
 description: 'Se você está começando agora no mundo do desenvolvimento você precisa ter uma base de como funciona variáveis.'
 keywords: 'sass, css, scss, pre-processador, pre-processadores, variáveis'
 image: ../conhecendo-o-pre-processador-sass-parte-1/conhecendo-o-pre-processador-sass.jpg

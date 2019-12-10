@@ -2,6 +2,7 @@
 path: '/como-instalar-o-gulp-4'
 title: 'Como instalar o Gulp 4'
 date: 2015-09-26
+datePublished: 2015-09-26
 description: 'Gulp 4 não foi liberado ainda e se você não pode esperar para colocar suas mãos sobre ele, aqui vai como instalar o Gulp 4.'
 keywords: 'node, gulp, gulpjs, instalacao'
 image: ./gulp.png
@@ -12,6 +13,7 @@ tags:
   - gulp
   - instalação
 ---
+
 Gulp 4 não foi liberado ainda e se você não pode esperar para colocar suas mãos sobre ele, aqui vai como instalar o Gulp 4.
 
 ### Instale o Gulp globalmente

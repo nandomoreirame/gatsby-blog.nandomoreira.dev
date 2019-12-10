@@ -5,12 +5,14 @@ description: Iremos usar o comando sass-convert do próprio SASS para realizar a
 image: ../../../assets/conhecendo-o-pre-processador-sass.jpg
 keywords: 'scss, sass, dica'
 date: 2016-07-05
+datePublished: 2016-07-05
 category:
   - dica
 tags:
   - scss
   - sass
 ---
+
 Iremos usar o comando `sass-convert` do próprio SASS para realizar a conversão dos arquivos, mas já sabemos que ele converte apenas um único arquivo, então vamos usar o terminal e com um simples loop iremos converter todos os arquivos de um diretório (ou vários diretórios) de uma só vez.
 
 ### Em sistemas Unix (Mac e Linux)
@@ -33,6 +35,7 @@ Não esqueça de trocar `path/to/scss/` para o caminho onde estão os seus arqui
 Eu não testei no Linux nem no Windows então se você executou os comandos e algo não deu certo comenta ai e vamos resolver juntos.
 
 ---
+
 Espero ter ajudado, Abraço!
 
 😎

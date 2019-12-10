@@ -3,6 +3,7 @@ path: '/role-aleatorio-com-conversas-aleatorias'
 title: Role aleatório com conversas aleatórias gerou pensamentos aleatórios
 description: Domingo, 14 de outubro de 2018, eu passei por um dos meus melhores finais de semana, conheci pessoas novas e troquei muitas ideias aleatórias com essas pessoas.
 date: 2018-10-14
+datePublished: 2018-10-14
 category:
   - vida
 tags:
@@ -11,6 +12,7 @@ tags:
   - geral
 image: ../../../assets/role-aleatorio-ronaldinho.jpeg
 ---
+
 ## Música
 
 Música para esse artigo é: **"Estou na mão" de TNT**, [ouça aqui](https://open.spotify.com/track/0j2pDZRqF3cW7E5jlP5Yhv?si=YXweBEICQbquROummLyb3A).

@@ -2,6 +2,7 @@
 path: '/sass-e-atomic-design'
 title: 'SASS + Atomic design'
 date: 2015-11-16
+datePublished: 2015-11-16
 description: 'SASS é um pré-processador incrível não acha? Mas muitos não sabem como organizar seus projetos com ele'
 image: ../../../assets/conhecendo-o-pre-processador-sass.jpg
 category:

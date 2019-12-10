@@ -2,6 +2,7 @@
 path: '/faco-front-end-de-graca'
 title: 'Faço front-end de graça, saiba como!'
 date: 2015-10-12
+datePublished: 2015-10-12
 description: 'É isso mesmo que você leu, Faço front-end de graça, mas tem alguns requisitos necessários para que isso aconteça, vem comigo que te explico como'
 keywords: 'front-end, frontend, html, css, free, freedom, job, projeto, open-source, open, source'
 category:
@@ -12,6 +13,7 @@ tags:
   - open-source
   - geral
 ---
+
 Você deve estar se perguntando: _**"Front-end de graça? Como assim?"**_
 
 É isso mesmo que você leu, **Faço front-end de graça**, mas tem alguns requisitos necessários para que isso aconteça, vem comigo que te explico como...

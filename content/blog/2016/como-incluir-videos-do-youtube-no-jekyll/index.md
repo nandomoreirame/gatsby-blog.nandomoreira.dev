@@ -2,6 +2,7 @@
 path: '/como-incluir-videos-do-youtube-no-jekyll'
 title: 'Como incluir vídeos do youtube no seu blog Jekyll de forma fácil'
 date: 2016-01-10 17:03:59
+datePublished: 2016-01-10 17:03:59
 description: 'Hoje vamos usar um plugin bem bacana para incluir vídeos do youtube no seu blog Jekyll sem precisar copiar e colar o iframe do youtube'
 image: ../../../assets/get-started-with-jekyll.jpg
 keywords: 'jekyll, youtube, plugins, plugin, embed'

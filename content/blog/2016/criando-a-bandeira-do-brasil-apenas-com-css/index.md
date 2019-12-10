@@ -5,6 +5,7 @@ description: 'Hoje eu vou demonstrar nesse artigo como eu criei a bandeira do Br
 keywords: 'css, css3, html, front-end, frontendm flags, bandeira, brasil'
 image: ../../../assets/bandeira-do-brasil-com-css.png
 date: 2016-01-23
+datePublished: 2016-01-23
 category:
   - css
 tags:

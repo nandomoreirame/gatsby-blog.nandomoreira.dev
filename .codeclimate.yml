@@ -22,8 +22,9 @@ ratings:
   paths:
     - '**.js'
     - '**.jsx'
-    - '**.styl'
+    - '**.tsx'
+    - '**.ts'
 
 exclude_paths:
-  - .vscode/**/*
+  - static/**/*
   - content/**/*

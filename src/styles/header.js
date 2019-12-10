@@ -19,7 +19,7 @@ export default {
       left: 0;
       right: 0;
     }
-    @media (min-width: 420px) {
+    @media (min-width: 720px) {
       padding: 4rem 0;
     }
   `,
@@ -27,9 +27,11 @@ export default {
   inner: styled(Layout.container)`
     display: flex;
     align-items: center;
+    flex-direction: column-reverse;
     justify-content: center;
-    @media (min-width: 420px) {
-      justify-content: flex-start;
+    @media (min-width: 720px) {
+      flex-direction: row;
+      justify-content: space-between;
     }
   `,
 
@@ -42,10 +44,12 @@ export default {
     line-height: 1.1;
     text-align: center;
     text-decoration: none;
-    @media (min-width: 480px) {
+    margin-top: 1.2rem;
+    @media (min-width: 720px) {
       line-height: 1.4;
       font-size: 1.2rem;
       text-align: left;
+      margin-top: 0;
     }
   `,
 
@@ -56,7 +60,7 @@ export default {
     font-weight: 400;
     opacity: 0.6;
     position: relative;
-    @media (min-width: 420px) {
+    @media (min-width: 720px) {
       font-size: 70%;
       display: inline-block;
     }

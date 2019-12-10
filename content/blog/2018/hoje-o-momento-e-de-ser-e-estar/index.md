@@ -13,6 +13,7 @@ tags:
   - reflexões
 image: ../../../assets/2018-10-05-hoje-o-momento-e-de-ser-e-estar.jpg
 ---
+
 Música para esse artigo é: **"Deriram" de Natiruts**, [ouça aqui](https://open.spotify.com/track/7tOXrVF1kPuf8lLXCfBywn).
 <br/>Trecho:
 
@@ -24,6 +25,7 @@ Com o pensamento à frente, o sentimento bom
 ```
 
 ---
+
 ## Reflexões - Think about it.
 
 > **Você já parou para pensar o quanto você é manipulado pelos outros?**
@@ -86,7 +88,7 @@ E quase dois meses depois eu pareço outra pessoa, estou inspirado, motivado, co
 
 ## Colecione momentos, não coisas
 
-#BeMinimalist
+`#BeMinimalist`
 
 Hoje estou me desfazendo de algumas coisas, objetos, roupas e pessoas também.
 
@@ -99,6 +101,7 @@ Meu objetivo com isso é:
 3. [ ✔︎ ] Focar no que é importante para meu corpo e minha mente;
 
 ---
+
 ## Concluindo..
 
 No momento meus objetivos são:

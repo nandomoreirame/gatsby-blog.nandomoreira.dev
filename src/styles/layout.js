@@ -19,14 +19,18 @@ export default {
     display: flex;
     height: 100%;
     justify-content: center;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
+  `,
+
+  errorInner: styled.div`
+    padding: 1.2rem 2rem;
     text-align: center;
     h1 {
       font-size: 9rem;
+      margin: 0;
     }
     p {
       font-size: 1.2rem;
+      margin: 0;
     }
   `,
 }

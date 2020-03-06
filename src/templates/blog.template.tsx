@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby';
 import SEO from '@components/seo';
 import Layout from '@components/layout';
 import Article from '@components/article';
+import Newsletter from '@components/newsletter';
 import { Blog } from '@styles';
 import { TemplateTypes } from '@types';
 
@@ -42,6 +43,8 @@ const BlogTemplate: TemplateTypes = ({ data, pageContext }) => {
             </Link>
           )}
         </Blog.pagination>
+
+        <Newsletter />
       </Blog.list>
     </Layout>
   );

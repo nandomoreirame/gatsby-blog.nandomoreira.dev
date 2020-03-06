@@ -2,13 +2,13 @@ import styled from '@emotion/styled';
 
 export default {
   main: styled.footer`
-    background-color: #fafafa;
+    background-color: #fff;
     display: block;
-    margin: 2.5rem auto 0;
+    margin: 0 auto;
     padding: 2.5rem 2rem;
     text-align: center;
+    border-top: 1px solid #eee;
     @media (min-width: 420px) {
-      margin: 5rem auto 0;
       padding: 5rem 2rem;
     }
   `,

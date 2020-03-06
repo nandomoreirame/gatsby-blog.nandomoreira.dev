@@ -23,6 +23,7 @@ const plugins = [
     resolve: `gatsby-transformer-remark`,
     options: {
       plugins: [
+        `gatsby-remark-wrap-iframe`,
         {
           resolve: `gatsby-remark-images`,
           options: {

@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 
 export default {
@@ -7,7 +9,7 @@ export default {
     justify-content: center;
   `,
 
-  link: styled.a`
+  link: styled(props => <Link {...props} />)`
     display: inline-block;
     margin: 0;
     opacity: 0.75;
@@ -31,7 +33,8 @@ export default {
     }
     &:hover::after,
     &:focus::after,
-    &:active::after {
+    &:active::after,
+    &[aria-current='page'] {
       top: 0;
       background-color: rgba(255, 250, 150, 0.8);
     }

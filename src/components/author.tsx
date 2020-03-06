@@ -1,6 +1,5 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-
 import Image from '@components/image';
 import Social from '@components/social';
 import { AuthorBox } from '@styles';

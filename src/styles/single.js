@@ -138,6 +138,7 @@ export default {
 
   comments: styled.aside`
     padding: 2.5rem 0 0;
+    margin: 2.5rem 0 5rem;
   `,
 
   commentsInner: styled(Layout.container)``,

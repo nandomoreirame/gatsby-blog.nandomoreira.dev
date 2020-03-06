@@ -5,7 +5,7 @@ export default {
   list: styled.section``,
 
   pagination: styled(Layout.container)`
-    margin: 2.5rem auto 0;
+    margin: 2.5rem auto;
     padding: 1.2rem 0;
     text-align: center;
     a {
@@ -22,7 +22,7 @@ export default {
       }
     }
     @media (min-width: 420px) {
-      margin: 5rem auto 0;
+      margin: 5rem auto;
       padding: 1.2rem 0;
       align-items: center;
       display: flex;

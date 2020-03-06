@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '@components/layout';
 import AuthorBox from '@components/author';
 import Comments from '@components/comments';
+import Newsletter from '@components/newsletter';
 import SEO from '@components/seo';
 import { Single } from '@styles';
 import { TemplateTypes } from '@types';
@@ -106,6 +107,7 @@ const SingleTemplate: TemplateTypes = ({ data }) => {
       </Single.footer>
       <AuthorBox />
       <Comments shortname={discus.shortname} config={discus.config} />
+      <Newsletter />
     </Layout>
   );
 };

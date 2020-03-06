@@ -11,16 +11,8 @@ const SiteHeaderComponent = ({ title, desc }: HeaderInterface) => (
       <Nav
         items={[
           {
-            title: 'Sobre',
-            link: 'https://nandomoreira.dev/sobre',
-          },
-          {
-            title: 'Projetos',
-            link: 'https://nandomoreira.dev/portfolio',
-          },
-          {
-            title: 'Contato',
-            link: 'https://nandomoreira.dev/contato',
+            title: 'newsletter',
+            link: '/newsletter',
           },
         ]}
       />

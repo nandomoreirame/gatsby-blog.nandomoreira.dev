@@ -1,7 +1,7 @@
-import { css } from '@emotion/core'
-import styled from '@emotion/styled'
-import Layout from './layout'
-import theme from './theme'
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
+import Layout from './layout';
+import theme from './theme';
 
 export default {
   main: styled.header`
@@ -78,4 +78,4 @@ export default {
       background-color: rgba(255, 250, 150, 0.8);
     }
   `,
-}
+};

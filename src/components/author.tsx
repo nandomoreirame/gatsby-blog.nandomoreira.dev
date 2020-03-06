@@ -1,30 +1,23 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 
-import Image from '@components/image'
-import Social from '@components/social'
-import { AuthorBox } from '@styles'
+import Image from '@components/image';
+import Social from '@components/social';
+import { AuthorBox } from '@styles';
 
-const Author = () => (
+/* eslint @typescript-eslint/no-use-before-define: "off"  */
+const AuthorComponent = () => (
   <StaticQuery
     query={authorQuery}
     render={({ site, avatar }) => {
-      const { author } = site.siteMetadata
+      const { author } = site.siteMetadata;
 
       return (
-        <aside
-          itemScope
-          itemType="http://schema.org/Person"
-          css={AuthorBox.aside}
-        >
+        <aside itemScope itemType="http://schema.org/Person" css={AuthorBox.aside}>
           <AuthorBox.inner>
             <meta itemProp="jobTitle" content="desenvolvedor front-end" />
             <meta itemProp="worksFor" content="Onedev.studio" />
-            <Image
-              node={avatar}
-              alt={`Foto de ${author.name}`}
-              itemProp="image"
-            />
+            <Image node={avatar} alt={`Foto de ${author.name}`} itemProp="image" />
             <AuthorBox.bio>
               <h3>
                 <a
@@ -32,6 +25,7 @@ const Author = () => (
                   title={`ir ao site de ${author.name}`}
                   data-label={`ir ao site de ${author.name}`}
                   target="_blank"
+                  rel="noopener noreferrer"
                   itemProp="name"
                 >
                   {author.name}
@@ -44,10 +38,10 @@ const Author = () => (
             </AuthorBox.bio>
           </AuthorBox.inner>
         </aside>
-      )
+      );
     }}
   />
-)
+);
 
 const authorQuery = graphql`
   query AuthorQuery {
@@ -87,6 +81,6 @@ const authorQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default Author
+export default AuthorComponent;

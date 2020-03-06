@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export default {
   main: styled.nav`
@@ -36,4 +36,4 @@ export default {
       background-color: rgba(255, 250, 150, 0.8);
     }
   `,
-}
+};

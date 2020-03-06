@@ -1,28 +1,25 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import SEO from '@components/seo'
-import Layout from '@components/layout'
-import Article from '@components/article'
-import { Blog, Single } from '@styles'
-import { Template } from '@types'
+import SEO from '@components/seo';
+import Layout from '@components/layout';
+import Article from '@components/article';
+import { Blog } from '@styles';
+import { TemplateTypes } from '@types';
 
-const BlogTemplate: Template = ({ data, pageContext }) => {
-  const { description, siteDesc } = data.site.siteMetadata
-  const posts = data.postsResults.edges
-  const { currentPage, numPages } = pageContext
-  const isFirst = currentPage === 1
-  const isLast = currentPage === numPages
-  const prevPage =
-    currentPage - 1 === 1 ? '/' : `/page/${(currentPage - 1).toString()}`
-  const nextPage = `/page/${(currentPage + 1).toString()}`
+const BlogTemplate: TemplateTypes = ({ data, pageContext }) => {
+  const { description, siteDesc } = data.site.siteMetadata;
+  const posts = data.postsResults.edges;
+  const { currentPage, numPages } = pageContext;
+  const isFirst = currentPage === 1;
+  const isLast = currentPage === numPages;
+  const prevPage = currentPage - 1 === 1 ? '/' : `/page/${(currentPage - 1).toString()}`;
+  const nextPage = `/page/${(currentPage + 1).toString()}`;
 
   const seo = {
     title: isFirst ? siteDesc : `${siteDesc} [Página ${currentPage}]`,
-    description: isFirst
-      ? description
-      : `${description} [Página ${currentPage}]`,
-  }
+    description: isFirst ? description : `${description} [Página ${currentPage}]`,
+  };
 
   return (
     <Layout>
@@ -47,10 +44,10 @@ const BlogTemplate: Template = ({ data, pageContext }) => {
         </Blog.pagination>
       </Blog.list>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogTemplate
+export default BlogTemplate;
 
 // filter: { frontmatter: { layout: { eq: "post" } } }
 export const pageQuery = graphql`
@@ -93,4 +90,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Article, Layout } from '@styles'
+import React from 'react';
+import { Link } from 'gatsby';
+import { Article } from '@styles';
 
-export default ({ node }) => {
-  const { path, image, title, description, date } = node.frontmatter
-  const { readingTime } = node.fields
+const ArticleComponent = ({ node }) => {
+  const { path, title, description, date, excerpt } = node.frontmatter;
+  const { readingTime } = node.fields;
 
-  const minutes = node.timeToRead.toFixed()
-  const words = readingTime.words
+  const minutes = node.timeToRead.toFixed();
+  const words = readingTime.words;
 
   return (
     <Article.item role="article">
@@ -16,8 +16,7 @@ export default ({ node }) => {
           <Article.title aria-label="Título">{title}</Article.title>
           <Article.meta>
             <span>
-              Publicado <strong>{date}</strong> por{' '}
-              <strong>Fernando Moreira</strong>
+              Publicado <strong>{date}</strong> por <strong>Fernando Moreira</strong>
             </span>
             <span className="divider" />
             <span>
@@ -30,10 +29,10 @@ export default ({ node }) => {
             </span>
           </Article.meta>
         </Article.header>
-        <Article.excerpt aria-label="Descrição">
-          {description || excerpt}
-        </Article.excerpt>
+        <Article.excerpt aria-label="Descrição">{description || excerpt}</Article.excerpt>
       </Link>
     </Article.item>
-  )
-}
+  );
+};
+
+export default ArticleComponent;

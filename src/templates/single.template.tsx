@@ -1,31 +1,22 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from '@components/layout'
-import AuthorBox from '@components/author'
-import Comments from '@components/comments'
-import SEO from '@components/seo'
-import { Single } from '@styles'
-import { Template } from '@types'
+import Layout from '@components/layout';
+import AuthorBox from '@components/author';
+import Comments from '@components/comments';
+import SEO from '@components/seo';
+import { Single } from '@styles';
+import { TemplateTypes } from '@types';
 
-const SingleTemplate: Template = ({ pageContext, data }) => {
-  const { frontmatter, html, timeToRead, fields } = data.markdownRemark
-  const {
-    path,
-    image,
-    title,
-    description,
-    date,
-    datePublished,
-    excerpt,
-  } = frontmatter
-  const { author, siteUrl } = data.site.siteMetadata
-  const { readingTime } = fields
+const SingleTemplate: TemplateTypes = ({ data }) => {
+  const { frontmatter, html, timeToRead, fields } = data.markdownRemark;
+  const { path, image, title, description, date, datePublished, excerpt } = frontmatter;
+  const { author, siteUrl } = data.site.siteMetadata;
+  const { readingTime } = fields;
 
-  const imageUrl = image.publicURL
-  // const imageAlt = image.name.replace(/(\-)/g, ' ')
-  const minutes = timeToRead.toFixed()
-  const words = readingTime.words
+  const imageUrl = image.publicURL;
+  const minutes = timeToRead.toFixed();
+  const words = readingTime.words;
 
   const discus = {
     shortname: author.social.disqus,
@@ -33,7 +24,7 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
       identifier: `${path}/`,
       title,
     },
-  }
+  };
 
   const schemaScript = `<script type="application/ld+json">{
     "@context": "https://schema.org",
@@ -61,15 +52,11 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
       }
     },
     "description": "${description || excerpt}"
-  }</script>`
+  }</script>`;
 
   return (
     <Layout>
-      <SEO
-        title={title}
-        description={description || excerpt}
-        image={imageUrl}
-      />
+      <SEO title={title} description={description || excerpt} image={imageUrl} />
       <Single.header>
         <Single.title>{title}</Single.title>
         <Single.meta>
@@ -81,6 +68,7 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
                 title={`ir ao site de ${author.name}`}
                 data-label={`ir ao site de ${author.name}`}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {author.name}
               </a>
@@ -98,9 +86,7 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
           </span>
         </Single.meta>
       </Single.header>
-      <Single.content
-        dangerouslySetInnerHTML={{ __html: `${html}${schemaScript}` }}
-      />
+      <Single.content dangerouslySetInnerHTML={{ __html: `${html}${schemaScript}` }} />
       <Single.footer>
         <Single.meta>
           Publicado <strong>{date}</strong> por{' '}
@@ -110,6 +96,7 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
               title={`ir ao site de ${author.name}`}
               data-label={`ir ao site de ${author.name}`}
               target="_blank"
+              rel="noopener noreferrer"
             >
               {author.name}
             </a>
@@ -120,10 +107,10 @@ const SingleTemplate: Template = ({ pageContext, data }) => {
       <AuthorBox />
       <Comments shortname={discus.shortname} config={discus.config} />
     </Layout>
-  )
-}
+  );
+};
 
-export default SingleTemplate
+export default SingleTemplate;
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -163,4 +150,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

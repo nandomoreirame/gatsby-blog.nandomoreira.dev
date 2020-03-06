@@ -1,6 +1,6 @@
-import styled from '@emotion/styled'
-import Layout from './layout'
-import theme from './theme'
+import styled from '@emotion/styled';
+import Layout from './layout';
+import theme from './theme';
 
 export default {
   item: styled.article`
@@ -79,4 +79,4 @@ export default {
       font-size: 1.2rem;
     }
   `,
-}
+};

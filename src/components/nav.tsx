@@ -1,7 +1,7 @@
-import React from 'react'
-import { Nav } from '@styles'
+import React from 'react';
+import { Nav } from '@styles';
 
-export default ({ items }) => (
+const NavComponent = ({ items }) => (
   <Nav.main role="navigation">
     {items.length > 0 &&
       items.map((item, i) => {
@@ -17,7 +17,9 @@ export default ({ items }) => (
           >
             {item.title}
           </Nav.link>
-        )
+        );
       })}
   </Nav.main>
-)
+);
+
+export default NavComponent;

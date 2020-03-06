@@ -1,9 +1,11 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Header } from '@styles'
+import React from 'react';
+import { Link } from 'gatsby';
+import { Header } from '@styles';
 
-export default ({ title, desc }) => (
+const BrandComponent = ({ title, desc }) => (
   <Link to="/" css={Header.brandStyles} role="link">
     {title} {desc && <Header.desc>{desc}</Header.desc>}
   </Link>
-)
+);
+
+export default BrandComponent;

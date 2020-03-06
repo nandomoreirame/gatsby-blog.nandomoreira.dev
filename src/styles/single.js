@@ -1,6 +1,6 @@
-import styled from '@emotion/styled'
-import Layout from './layout'
-import theme from './theme'
+import styled from '@emotion/styled';
+import Layout from './layout';
+import theme from './theme';
 
 export default {
   header: styled(Layout.container)`
@@ -141,4 +141,4 @@ export default {
   `,
 
   commentsInner: styled(Layout.container)``,
-}
+};

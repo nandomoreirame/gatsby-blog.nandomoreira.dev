@@ -1,21 +1,12 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React, { Fragment } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Global } from '@emotion/core';
+import { globalStyles } from '@styles';
+import { LayoutInterface } from '@types';
+import SiteHeader from './header';
+import SiteFooter from './footer';
 
-import React from 'react'
-import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
-import { Global } from '@emotion/core'
-
-import SiteHeader from './header'
-import SiteFooter from './footer'
-import { globalStyles } from '@styles'
-import { iLayoutProps } from '@types'
-
-const Layout = ({ children }: iLayoutProps) => {
+const LayoutComponent = ({ children }: LayoutInterface) => {
   const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,26 +16,18 @@ const Layout = ({ children }: iLayoutProps) => {
         }
       }
     }
-  `)
+  `);
+
+  const { siteName, siteDesc } = site.siteMetadata;
 
   return (
-    <>
+    <Fragment>
       <Global styles={globalStyles} />
-      <SiteHeader
-        title={site.siteMetadata.siteName}
-        desc={site.siteMetadata.siteDesc}
-      />
+      <SiteHeader title={siteName} desc={siteDesc} />
       <main id="content">{children}</main>
-      <SiteFooter
-        title={site.siteMetadata.siteName}
-        desc={site.siteMetadata.siteDesc}
-      />
-    </>
-  )
-}
+      <SiteFooter title={siteName} desc={siteDesc} />
+    </Fragment>
+  );
+};
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
+export default LayoutComponent;

@@ -1,5 +1,5 @@
-const { resolve } = require('path')
-const srcPath = resolve(__dirname, '..', '..', 'src')
+const { resolve } = require('path');
+const srcPath = resolve(__dirname, '..', '..', 'src');
 
 module.exports = ({ actions }) => {
   actions.setWebpackConfig({
@@ -11,5 +11,5 @@ module.exports = ({ actions }) => {
       },
       extensions: ['.js', '.json', '.jsx', '.ts', '.tsx'],
     },
-  })
-}
+  });
+};

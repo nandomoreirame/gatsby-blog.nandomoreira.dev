@@ -1,5 +1,5 @@
-import styled from '@emotion/styled'
-import Layout from './layout'
+import styled from '@emotion/styled';
+import Layout from './layout';
 
 export default {
   list: styled.section``,
@@ -30,4 +30,4 @@ export default {
       text-align: left;
     }
   `,
-}
+};

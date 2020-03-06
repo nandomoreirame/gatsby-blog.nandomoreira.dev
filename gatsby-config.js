@@ -1,13 +1,20 @@
-require('dotenv').config()
+require('dotenv').config();
 
-const { resolve } = require('path')
+const { resolve } = require('path');
 
-const today = new Date()
-const currentYear = today.getFullYear()
-const siteUrl = `https://blog.nandomoreira.dev`
+const today = new Date();
+const currentYear = today.getFullYear();
+const siteUrl = `https://blog.nandomoreira.dev`;
 
 const plugins = [
-  `gatsby-plugin-typescript`,
+  {
+    resolve: `gatsby-plugin-typescript`,
+    options: {
+      isTSX: true, // defaults to false
+      jsxPragma: `jsx`, // defaults to "React"
+      allExtensions: true, // defaults to false
+    },
+  },
   `gatsby-plugin-react-helmet`,
   `gatsby-transformer-sharp`,
   `gatsby-plugin-sharp`,
@@ -69,6 +76,7 @@ const plugins = [
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
+      /* eslint @typescript-eslint/camelcase: "off" */
       name: `blog do nando`,
       short_name: `bnando`,
       start_url: `/`,
@@ -88,7 +96,6 @@ const plugins = [
       path: resolve(__dirname, `src/pages`),
     },
   },
-  `gatsby-plugin-offline`,
   {
     resolve: `gatsby-plugin-sitemap`,
     options: {
@@ -96,7 +103,7 @@ const plugins = [
       exclude: [`/404`, `/404.html`],
     },
   },
-]
+];
 
 if (process.env.CONTEXT === 'production') {
   const netlifyCache = {
@@ -104,7 +111,7 @@ if (process.env.CONTEXT === 'production') {
     options: {
       cachePublic: true,
     },
-  }
+  };
 
   const analytics = {
     resolve: `gatsby-plugin-google-analytics`,
@@ -112,11 +119,12 @@ if (process.env.CONTEXT === 'production') {
       trackingId: process.env.GOOGLE_ANALYTICS_ID,
       head: false,
     },
-  }
+  };
 
-  plugins.push(`gatsby-plugin-netlify`)
-  plugins.push(netlifyCache)
-  plugins.push(analytics)
+  plugins.push(`gatsby-plugin-netlify`);
+  plugins.push(`gatsby-plugin-offline`);
+  plugins.push(netlifyCache);
+  plugins.push(analytics);
 }
 
 module.exports = {
@@ -149,4 +157,4 @@ module.exports = {
     },
   },
   plugins,
-}
+};

@@ -1,6 +1,6 @@
-import styled from '@emotion/styled'
-import { css } from '@emotion/core'
-import Layout from './layout'
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
+import Layout from './layout';
 
 export default {
   aside: css`
@@ -43,4 +43,4 @@ export default {
       margin-left: 2rem;
     }
   `,
-}
+};

@@ -1,5 +1,5 @@
-import styled from '@emotion/styled'
-import theme from './theme'
+import styled from '@emotion/styled';
+import theme from './theme';
 
 export default {
   list: styled.ul`
@@ -31,4 +31,4 @@ export default {
       }
     }
   `,
-}
+};

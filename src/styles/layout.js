@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export default {
   container: styled.div`
@@ -33,4 +33,4 @@ export default {
       margin: 0;
     }
   `,
-}
+};

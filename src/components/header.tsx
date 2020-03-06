@@ -1,14 +1,13 @@
-import React from 'react'
-import { css } from '@emotion/core'
-import Brand from '@components/brand'
-import Nav from '@components/nav'
-import { Header } from '@styles'
-import { iHeaderProps } from '@types'
+import React from 'react';
+import Brand from '@components/brand';
+import Nav from '@components/nav';
+import { Header } from '@styles';
+import { HeaderInterface } from '@types';
 
-const SiteHeader = ({ title, desc }: iHeaderProps) => (
+const SiteHeaderComponent = ({ title, desc }: HeaderInterface) => (
   <Header.main>
     <Header.inner>
-      <Brand title={title} desc={desc} />
+      {title && <Brand title={title} desc={desc} />}
       <Nav
         items={[
           {
@@ -27,6 +26,6 @@ const SiteHeader = ({ title, desc }: iHeaderProps) => (
       />
     </Header.inner>
   </Header.main>
-)
+);
 
-export default SiteHeader
+export default SiteHeaderComponent;

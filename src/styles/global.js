@@ -1,9 +1,9 @@
-import { css } from '@emotion/core'
-import theme from './theme'
+import { css } from '@emotion/core';
+import theme from './theme';
 
 const baseFontFamily = `Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI',
       Ubuntu, Roboto, Helvetica, 'Helvetica Neue', Arial, sans-serif,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`;
 
 export default css`
   :root {
@@ -264,4 +264,4 @@ export default css`
       overflow: initial;
     }
   }
-`
+`;

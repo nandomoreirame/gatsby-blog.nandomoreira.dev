@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export default {
   main: styled.footer`
@@ -40,4 +40,4 @@ export default {
       }
     }
   `,
-}
+};

@@ -1,8 +1,8 @@
-import React from 'react'
-import Brand from '@components/brand'
-import { Footer } from '@styles'
+import React from 'react';
+import Brand from '@components/brand';
+import { Footer } from '@styles';
 
-export default ({ title, desc }) => (
+const FooterComponent = ({ title, desc }) => (
   <Footer.main>
     <Footer.inner>
       <div>
@@ -45,4 +45,6 @@ export default ({ title, desc }) => (
       </p>
     </Footer.inner>
   </Footer.main>
-)
+);
+
+export default FooterComponent;

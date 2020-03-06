@@ -1,10 +1,10 @@
-import React from 'react'
-import SEO from '@components/seo'
-import { globalStyles, Layout } from '@styles'
-import { Global } from '@emotion/core'
+import React, { Fragment } from 'react';
+import SEO from '@components/seo';
+import { globalStyles, Layout } from '@styles';
+import { Global } from '@emotion/core';
 
 const NotFoundPage = () => (
-  <>
+  <Fragment>
     <Global styles={globalStyles} />
     <SEO
       title="Erro 404 - Página não encontrada"
@@ -16,7 +16,7 @@ const NotFoundPage = () => (
         <p>Você acabou de pegar uma rota que não existe... a que tristeza.</p>
       </Layout.errorInner>
     </Layout.error>
-  </>
-)
+  </Fragment>
+);
 
-export default NotFoundPage
+export default NotFoundPage;

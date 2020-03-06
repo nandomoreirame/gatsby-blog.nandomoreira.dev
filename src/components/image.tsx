@@ -1,23 +1,24 @@
-import React from 'react'
-import GatsbyImage from 'gatsby-image'
+import React from 'react';
+import GatsbyImage from 'gatsby-image';
 
-export default ({ node, ...props }) => {
-  if (!node) return null
+const ImageComponent = ({ node, ...props }) => {
+  if (!node) return null;
 
-  // eslint-disable-next-line jsx-a11y/alt-text
-  let image = <img src={node.publicURL} {...props} />
+  let image = <img src={node.publicURL} {...props} />;
 
   if (node.childImageSharp && node.childImageSharp.fluid) {
-    image = <GatsbyImage fluid={node.childImageSharp.fluid} {...props} />
+    image = <GatsbyImage fluid={node.childImageSharp.fluid} {...props} />;
   }
 
   if (node.childImageSharp && node.childImageSharp.fixed) {
-    image = <GatsbyImage fixed={node.childImageSharp.fixed} {...props} />
+    image = <GatsbyImage fixed={node.childImageSharp.fixed} {...props} />;
   }
 
   if (node.childImageSharp && node.childImageSharp.sizes) {
-    image = <GatsbyImage sizes={node.childImageSharp.sizes} {...props} />
+    image = <GatsbyImage sizes={node.childImageSharp.sizes} {...props} />;
   }
 
-  return image
-}
+  return image;
+};
+
+export default ImageComponent;

@@ -1,10 +1,10 @@
-const { resolve } = require('path')
-const srcPath = resolve(__dirname, '..', '..', 'src')
-const templatesPath = resolve(srcPath, 'templates')
+const { resolve } = require('path');
+const srcPath = resolve(__dirname, '..', '..', 'src');
+const templatesPath = resolve(srcPath, 'templates');
 
 const createPostsList = (createPage, posts) => {
-  const perPage = 12
-  const numPages = Math.ceil(posts.length / perPage)
+  const perPage = 12;
+  const numPages = Math.ceil(posts.length / perPage);
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
@@ -16,9 +16,9 @@ const createPostsList = (createPage, posts) => {
         numPages,
         currentPage: i + 1,
       },
-    })
-  })
-}
+    });
+  });
+};
 
 const createSinglePost = (createPage, posts) => {
   posts.forEach(({ node }) => {
@@ -27,12 +27,12 @@ const createSinglePost = (createPage, posts) => {
       component: resolve(`${templatesPath}/single.template.tsx`),
       slug: node.fields.slug,
       context: {},
-    })
-  })
-}
+    });
+  });
+};
 
 module.exports = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
     resolve(
@@ -67,11 +67,11 @@ module.exports = ({ graphql, actions }) => {
           }
         }
       `).then(result => {
-        if (result.errors) reject(result.errors)
+        if (result.errors) reject(result.errors);
 
-        createPostsList(createPage, result.data.listPostsQuery.edges)
-        createSinglePost(createPage, result.data.allMarkdownRemark.edges)
+        createPostsList(createPage, result.data.listPostsQuery.edges);
+        createSinglePost(createPage, result.data.allMarkdownRemark.edges);
       })
-    )
-  })
-}
+    );
+  });
+};
